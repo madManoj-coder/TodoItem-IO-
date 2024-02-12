@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directive';
+
+  skillsArr: Array<string> = ["HTML", "CSS", "JAVASCRIPT"]
+
+  addSkillset(skill: string) {
+    // console.log(skill);
+    this.skillsArr.push(skill)
+  }
+  
 }
